@@ -1,0 +1,138 @@
+table, th, td{
+    border:1px solid #fdf193;
+    padding: 5px;
+}
+
+td.hover {
+    background-color: #fffbef;
+    color: #ffd737;
+}
+
+td.hover:hover{
+    background-color: #ebde25;
+    color: rgb(255, 213, 0);
+} 
+
+table{
+    width:100%;
+    border-collapse: collapse;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+h2 {
+    color: #ffae00;
+}
+
+th{
+    height: 50px;
+}
+
+th.warna{
+    background-color: #ebc725;
+    color: white;
+}
+
+td{
+    text-align: center;
+}
+
+th.warni {
+    background-color: #fefdbf;
+    color: #8a5f1e;
+}
+
+th.warni:hover{
+    background-color: #d89d1d;
+    color: #ffffff;
+}
+
+th.warna:hover{
+   background-color: #af831e;
+   color: #ffffff;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #fffcef;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #ebb325;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid #d8b91d;
+}
+
+.header h1,
+.header h5 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.topnav {
+    overflow: hidden;
+   background-color: #ebe825;
+   border-bottom: 1px solid #d8b91d;
+    display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-wrap: nowrap;
+}
+
+.topnav a {
+    display: block;
+   color: rgb(255, 224, 122);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 20px;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   border-bottom: 3px solid transparent;
+   transition: 0.2s ease;
+}
+
+.topnav a:hover {
+   background-color: #ffcf77;
+   color: rgb(249, 158, 13);
+   border-bottom-color: #fff0a6;
+}
+
+th.warna:hover{
+   background-color: #ffd51b;
+   color: #ffffff;
+}
+
+.footer {
+    background-color: #fff787;
+    padding: 16px;
+    margin-top: 24px;
+    text-align: center;
+    color: white;
+    border-top: 1px solid #ffea08;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+}
