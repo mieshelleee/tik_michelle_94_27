@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "dogica";
+    src: url("dogica/TTF/dogica.ttf");
+}
+
+@font-face {
+    font-family: "banana";
+    src: url("yellow_banana/Yellow Banana.otf");
+}
+
+body {
+    font-family: 'dogica', sans-serif;
+    color: #ffffff;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+body.bg-home {
+    background-image: url("header background.png");
+}
+
+body.bg-pengertian {
+    background-image: url("pengertian.png");
+}
+
+body.bg-penggunaan {
+    background-image: url("penggunaan.png");
+}
+
+body.bg-positif {
+    background-image: url("positif.png");
+}
+
+body.bg-negatif {
+    background-image: url("negatif.png");
+}
+
+h1 {
+    font-family: "dogica", sans-serif;
+    font-size: 30pt;
+    margin-bottom: 10px;
+    color: #ffffff; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+    cursor: pointer;
+}
+
+h1:hover {
+    color: #6dc7ff; 
+    transform: scale(1.05); 
+}
+
+.welcome p, body > p {
+    transition: color 0.3s ease;
+    cursor: default;
+}
+
+.welcome p:hover, body > p:hover {
+    color: #e11d48; 
+}
+
+.phone-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    position: relative; /* Penting! Sebagai patokan posisi gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.vanellope {
+    position: absolute;
+    left: 100%;            
+    bottom: -10px;          
+    height: 380px;          
+    width: auto;
+    z-index: 1;             
+    pointer-events: auto;  
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease;
+    cursor: pointer; 
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25)); 
+    margin-left: -30px; 
+
+}
+.vanellope {
+    position: absolute;
+    left: 125%;
+    bottom: -10px;
+    height: 450px;
+    width: auto;
+    z-index: 1;
+    margin-left: -30px;
+    pointer-events: auto;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.vanellope:hover {
+    animation: vanellopeWiggle 0.4s ease infinite alternate;
+}
+
+@keyframes vanellopeWiggle {
+    0% {
+        transform: rotate(0deg) scale(1.05);
+    }
+    50% {
+        transform: rotate(-5deg) scale(1.05);
+    }
+    100% {
+        transform: rotate(5deg) scale(1.05);
+    }
+}
+
+.ralph {
+    position: absolute;
+    right: 125%;            
+    bottom: -10px;
+    height: 600px;          
+    width: auto;
+    z-index: 1;
+    margin-right: -30px;   
+    filter: drop-shadow(-4px 4px 10px rgba(255, 254, 254, 0.25));
+    
+    pointer-events: auto;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease;
+    cursor: pointer;
+}
+
+.ralph:hover {
+    transform: scale(1.08) translate(-5px, -8px) rotate(-2deg);
+    filter: drop-shadow(-6px 12px 16px rgba(0, 0, 0, 0.662));
+}
+
+@media (max-width: 768px) {
+    .ralph{
+        height: 220px;
+        margin-right: -50px;
+    }
+}
+
+.content-section {
+    font-family: 'banana', cursive;
+    color: #04004c;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.content-section p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.content-section ul, 
+.content-section ol {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.content-section li {
+    margin-bottom: 8px;
+}
